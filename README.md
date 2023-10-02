@@ -1,7 +1,5 @@
 # Bank_operation
 
-# Bank_operations
-
 # Last 5 Bank Operations Project
 
 This Python project retrieves the last 5 banking operations from a designated source. It is developed and tested in PyCharm.
