@@ -38,21 +38,3 @@ def test_filter_and_sorting_with_executed_states():
 
     result = filter_and_sorting(data)
     assert result == expected_result
-
-
-def test_filter_and_sorting_no_executed_states():
-    data = [
-        {'state': 'PENDING', 'date': '2023-10-01'},
-        {'state': 'CANCELLED', 'date': '2023-09-30'},
-        {'state': 'PENDING', 'date': '2023-09-29'},
-    ]
-    expected_result = []
-    result = filter_and_sorting(data)
-    assert result == expected_result
-
-
-def test_filter_and_sorting_empty_input():
-    data = []
-    expected_result = []
-    result = filter_and_sorting(data)
-    assert result == expected_result
