@@ -23,7 +23,7 @@ if there were no from and to keys in json: """
         hidden_number = mask_account_number(message_split[-1])
     else:
         hidden_number = mask_card_number(message_split[-1])
-    return ' '.join(message_split) + ' ' + hidden_number
+    return ' '.join(message_split[:-1]) + ' ' + hidden_number
 
 
 def mask_card_number(number: str):
